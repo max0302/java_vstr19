@@ -5,24 +5,39 @@
 	<title>java vstr 19</title>
 	<script src="lib/jquery-3.4.1.min.js"></script>
 	<script src="js/script.js"></script>
+	<link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-	<button class="loadjQuery">Погода</button>
+	
 	<div class="0">
 		<input type="text" id="gorod">
-		<input type="text" id="dni">
+		<button class="loadjQuery">Погода</button>
 	</div>
-    <div class="1">
-    	<div class="1.1">
-    		<h3 class="name_country"></h3>
-    		<h4 class="localtime"></h4>
-    		<img id="oblako" src=""></img>
-    		<p id="oblakoText"></p>
-    	</div>
-    	<div class="1.2">
-    		
-    	</div>
-    </div>
-</body>
 
+    <div class="weather">
+    	<div class="today" style="border: 1px solid black; border-radius: 10px">
+	    	<div class="row">
+	    		<h3 class="name_country"></h3>
+	    		<h4 class="localtime"></h4>
+	    		
+	    	</div>
+	    	<div class="row">
+	    		<div style="text-align: center;">
+	    			<img id="oblako" src=""></img>
+	    			<p id="oblakoText"></p>
+	    		</div>
+	    		<div>
+	    			<h1 class="temp_c"></h1>
+	    		</div>
+	    		<div>
+	    			<p class="wind_kph"></p>
+	                <p class="precip_mm"></p>
+	                <p class="pressure_mb"></p>
+	    		</div>
+	    	</div>
+	    </div>
+	    <div class="forecast-weather row"></div>
+    </div>
+    
+</body>
 </html>

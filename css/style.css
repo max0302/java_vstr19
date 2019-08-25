@@ -1,0 +1,42 @@
+* {
+	margin-top: 10px;
+}
+.weather {
+	width: 550px;
+	padding: 20px;
+}
+.today {
+	padding: 20px;
+}
+.row {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.weather-onday {
+    text-align: center;
+    width: 20%;
+    border: 1px solid rgb(158, 158, 158);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.weather-onday {
+    border-left: none;
+}
+
+.weather-onday:nth-child(1) {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-left: 1px solid #555;
+}
+
+.weather-onday:nth-child(5) {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.forecast-tempc,
+.forecast-weekday {
+    font-weight: bold;
+}
